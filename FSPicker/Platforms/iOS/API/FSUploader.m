@@ -238,7 +238,10 @@
             completionHandler:(void (^)(FSBlob *blob, NSError *error))completionHandler {
 
     PHVideoRequestOptions *options=[[PHVideoRequestOptions alloc] init];
-    options.version = PHVideoRequestOptionsVersionOriginal;
+		//options.version = PHVideoRequestOptionsVersionOriginal;
+    options.networkAccessAllowed = YES;
+    options.version = PHVideoRequestOptionsVersionCurrent;
+    options.deliveryMode = PHVideoRequestOptionsDeliveryModeMediumQualityFormat;
 
     [[PHImageManager defaultManager] requestAVAssetForVideo:asset options:options resultHandler:^(AVAsset *asset, AVAudioMix *audioMix, NSDictionary *info) {
         if ([asset isKindOfClass:[AVURLAsset class]]) {

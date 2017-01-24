@@ -5,6 +5,10 @@
 FSPicker is a Filestack's reimplementation of [iOS-picker](https://github.com/Ink/ios-picker).
 If you have any feature request or bug to report, please open an issue or PR.
 
+## Fork Description
+
+Fix crashing when choosing asset from icloud
+
 ## Requirements
 
 iOS 8.4 or later

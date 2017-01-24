@@ -179,7 +179,7 @@
     FSSource *source = [[FSSource alloc] init];
 
     source.identifier = FSSourceCamera;
-    source.name = @"Camera";
+    source.name = @"Camera (fastest upload)";
     source.icon = @"icon-camera";
     source.rootPath = @"/Camera";
     source.openMimeTypes = @[@"video/quicktime", @"image/jpeg", @"image/png"];
