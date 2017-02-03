@@ -206,7 +206,6 @@
     pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
     pickerController.mediaTypes = [self imagePickerMediaTypes];
     pickerController.allowsEditing = NO;
-    pickerController.videoQuality = UIImagePickerControllerQualityTypeHigh;
     pickerController.delegate = self;
 
     if (self.config.defaultToFrontCamera) {
